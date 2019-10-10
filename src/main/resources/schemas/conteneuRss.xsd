@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.nuxeo.org/ecm/schemas/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:nxs="http://www.nuxeo.org/ecm/schemas/">
+
+	<xs:element name="title" type="xs:string" />
+	<xs:element name="link" type="xs:string" />
+	<xs:element name="description" type="xs:string" />
+  	<xs:element name="idConteneur" type="xs:string"/>
+  	<xs:element name="pubDate" type="xs:dateTime"/>
+
+</xs:schema>
