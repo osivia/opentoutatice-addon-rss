@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.nuxeo.org/ecm/schemas/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:nxs="http://www.nuxeo.org/ecm/schemas/">
+
+  	<xs:complexType name="feed">
+  		<xs:sequence>
+  			<xs:element name="syncId" type="xs:string" />
+  			<xs:element name="displayName" type="xs:string" />
+  			<xs:element name="url" type="xs:string" />
+  		</xs:sequence>
+  	</xs:complexType>
+  	<xs:complexType name="feeds">
+  		<xs:sequence>
+  			<xs:element name="item" type="nxs:feeds" minOccurs="0" maxOccurs="unbounded"/>  		
+  		</xs:sequence>
+  	</xs:complexType>
+  	<xs:element name="feeds" type="nxs:feeds" />
+
+</xs:schema>

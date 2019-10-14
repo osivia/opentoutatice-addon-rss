@@ -1,0 +1,16 @@
+<xs:schema
+    targetNamespace="http://www.nuxeo.org/ecm/schemas/rss/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:nxs="http://www.nuxeo.org/ecm/schemas/rss/">
+
+	<xs:element name="syncId" type="xs:string" />
+    <xs:element name="link" type="xs:string" />
+    <xs:element name="category" type="xs:string"/>
+    <!-- Décrit un objet média attaché à l'item -->
+    <xs:element name="enclosure" type="xs:string"/> 
+    <!-- Une chaîne qui identifie l'item de façon unique -->
+     <xs:element name="guid" type="xs:string" />
+	<!-- Le canal RSS d'ou vient l'item -->
+    <xs:element name="source" type="xs:string"/>
+
+</xs:schema>
