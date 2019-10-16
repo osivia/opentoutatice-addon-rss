@@ -4,7 +4,7 @@
 
     <extension target="org.nuxeo.ecm.core.schema.TypeService" point="schema">
         <schema name="ottc-rss-item" prefix="rssi" src="schemas/ottc-rss-item.xsd" />
-        <schema name="ottc-rss-containeur" prefix="rssc" src="schemas/ottc-rss-containeur.xsd" />
+        <schema name="ottc-rss-container" prefix="rssc" src="schemas/ottc-rss-container.xsd" />
     </extension>
     
     
@@ -19,7 +19,7 @@
 			<facet name="Folderish" />
 			<schema name="common" />
 			<schema name="dublincore" />
-			<schema name="ottc-rss-containeur" />
+			<schema name="ottc-rss-container" />
 		</doctype>
 	</extension>
 	
