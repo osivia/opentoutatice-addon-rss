@@ -15,7 +15,7 @@
 			<schema name="ottc-rss-item" />
 		</doctype>
 
-		<doctype name="RssContainer"  >
+		<doctype name="RssContainer" extends="Document" >
 			<facet name="Folderish" />
 			<schema name="common" />
 			<schema name="dublincore" />
@@ -24,14 +24,19 @@
 	</extension>
 	
 	
-	<extension target="org.nuxeo.ecm.core.schema.TypeService" point="type">
+	<extension target="org.nuxeo.ecm.platform.types.TypeService" point="types">
 		<type id="Workspace">
 			<subtypes>
 				<type>RssContainer</type>	
 			</subtypes>
 		</type>
 		
+		<type id="RssItem">
+			<label>RSS Item</label>
+		</type>		
+		
 		<type id="RssContainer">
+			<label>RSS Container</label>
 			<subtypes>
 				<type>RssItem</type>	
 			</subtypes>

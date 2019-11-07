@@ -4,4 +4,4 @@ Bundle-Name: OpenToutatice rss addon
 Bundle-Localization: plugin
 Bundle-ManifestVersion: 1
 Bundle-SymbolicName: org.osivia.opentoutatice.addon.rss;singleton:=true
-Nuxeo-Component: OSGI-INF/extensions/rss.xml
+Nuxeo-Component: OSGI-INF/extensions/types.xml

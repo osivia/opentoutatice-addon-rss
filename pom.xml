@@ -3,4 +3,23 @@
   <groupId>opentoutatice-addon-rss</groupId>
   <artifactId>opentoutatice-addon-rss</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- JAR -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.1.1</version>
+					<configuration>
+						<archive>
+							<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+						</archive>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 </project>
