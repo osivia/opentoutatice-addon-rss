@@ -3,6 +3,16 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:nxs="http://www.nuxeo.org/ecm/schemas/rss/">
 
+	 <xs:complexType name="content"> 
+		 <xs:sequence> 
+		     <xs:element name="encoding" type="xs:string"/>  
+		     <xs:element name="mime-type" type="xs:string"/>  
+		     <xs:element name="data" type="xs:base64Binary"/>  
+		     <xs:element name="name" type="xs:string"/>  
+		     <xs:element name="length" type="xs:long"/>  
+		     <xs:element name="digest" type="xs:string"/>     
+		 </xs:sequence> 
+	 </xs:complexType> 
 	<xs:element name="syncId" type="xs:string" />
 	<xs:element name="title" type="xs:string" />
     <xs:element name="link" type="xs:string" />
@@ -16,5 +26,6 @@
     <xs:element name="enclosure" type="xs:string"/> 
 	<!-- Le canal RSS d'ou vient l'item -->
     <xs:element name="source" type="xs:string"/>
+    <xs:element name="picture" type="nxs:content" />
 
 </xs:schema>

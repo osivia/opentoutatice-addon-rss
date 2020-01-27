@@ -19,6 +19,7 @@
 			<facet name="Folderish" />
 			<schema name="common" />
 			<schema name="dublincore" />
+			<schema name="files" />			
 			<schema name="ottc-rss-container" />
 		</doctype>
 	</extension>
